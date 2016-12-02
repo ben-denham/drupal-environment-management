@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>Managing Drupal Environments</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/simple.css">
@@ -53,6 +53,45 @@
 
           <section>
             Diagram circling physical layer
+          </section>
+
+          <section>
+            <h3>Local Machine vs. Server</h3>
+
+            <ul>
+              <li class="fragment">
+                Production
+                <ul>
+                  <li>Probably on a server</li>
+                </ul>
+              </li>
+              <li class="fragment">
+                Testing
+                <ul>
+                  <li>Server for UAT?</li>
+                  <li class="fragment">Automated tests?</li>
+                  <li class="fragment">
+                    Continuous integration
+                    <ul>
+                      <li>GitLab CI, Jenkins, Travis, Circle</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="fragment">
+                Development
+                <ul>
+                  <li>Typically local</li>
+                  <li class="fragment">In the Cloud<sup style="font-size: 0.6em">TM</sup>?
+                    <ul>
+                      <li>Develop from anywhere</li>
+                      <li>Cloud IDEs: Eclipse Che, Cloud9, etc.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
           </section>
 
         </section>
